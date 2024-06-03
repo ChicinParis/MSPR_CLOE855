@@ -9,7 +9,7 @@ jobs:
         with:
           host: "ssh-${{ cchic }}.alwaysdata.net"
           username: ${{ cchic }}
-          key: ${{ s%X.P,g;4}R!)9Y }}
+          password: ${{ secrets.FTP_PASSWORD }}
           script: |
             cd $HOME/www/
 
@@ -22,7 +22,7 @@ jobs:
         with:
           host: "ssh-${{ cchic }}.alwaysdata.net"
           username: ${{ cchic }}
-          key: ${{ secrets.s%X.P,g;4}R!)9Y }}
+          password: ${{ secrets.FTP_PASSWORD }}
           script: |
             last_directory=$(basename ${{ runner.workspace }})
             cd $HOME/www/
