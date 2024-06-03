@@ -7,9 +7,9 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ secrets.USERNAME }}.alwaysdata.net"
-          username: ${{ secrets.cchic }}
-          key: ${{ secrets.s%X.P,g;4}R!)9Y }}
+          host: "ssh-${{ cchic }}.alwaysdata.net"
+          username: ${{ cchic }}
+          key: ${{ s%X.P,g;4}R!)9Y }}
           script: |
             cd $HOME/www/
 
@@ -20,8 +20,8 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ secrets.USERNAME }}.alwaysdata.net"
-          username: ${{ secrets.cchic }}
+          host: "ssh-${{ cchic }}.alwaysdata.net"
+          username: ${{ cchic }}
           key: ${{ secrets.s%X.P,g;4}R!)9Y }}
           script: |
             last_directory=$(basename ${{ runner.workspace }})
